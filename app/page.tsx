@@ -36,7 +36,6 @@ export default function Page() {
     try {
       console.log('Form submission started')
       
-      // Get this URL from your Zapier webhook setup
       const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/21805721/2g2e6f2/'
       
       const data = {
@@ -58,24 +57,16 @@ export default function Page() {
         headers: {
           'Content-Type': 'application/json',
         },
+        mode: 'no-cors', // Required for Zapier webhooks
         body: JSON.stringify(data)
       })
 
-      console.log('Response received:', {
-        status: response.status,
-        ok: response.ok,
-        statusText: response.statusText
-      })
-
-      const responseData = await response.text()
-      console.log('Response data:', responseData)
-
-      if (!response.ok) {
-        throw new Error(`Request failed: ${response.status} ${response.statusText}`)
-      }
-
+      // With no-cors, we won't get response details
+      // But the request will go through if successful
+      console.log('Form submitted')
       setStatus('success')
       setEmail('')
+      
     } catch (error) {
       console.error('Form submission error:', error)
       setStatus('error')
