@@ -85,8 +85,9 @@ export default function Page() {
 
       {/* Floating Bottles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Top Left */}
-        <div className="absolute top-[10%] left-[5%] w-64 h-64 opacity-30 animate-float-slow">
+        {/* Row 1 */}
+        <div className="absolute top-[5%] left-[5%] w-64 h-64 opacity-40 animate-float-slow">
+          <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 via-transparent to-transparent blur-xl" />
           <Image
             src="/images/Luxury Perfume Bottles (1).png"
             alt="Luxury Perfume Bottle"
@@ -95,8 +96,8 @@ export default function Page() {
           />
         </div>
         
-        {/* Top Right */}
-        <div className="absolute top-[15%] right-[10%] w-72 h-72 opacity-25 animate-float-slower">
+        <div className="absolute top-[8%] right-[15%] w-72 h-72 opacity-30 animate-float-slower">
+          <div className="absolute inset-0 bg-gradient-to-bl from-amber-500/10 via-transparent to-transparent blur-xl" />
           <Image
             src="/images/Luxury Perfume Bottles (2).png"
             alt="Luxury Perfume Bottle"
@@ -104,9 +105,10 @@ export default function Page() {
             className="object-contain"
           />
         </div>
-        
-        {/* Bottom Left */}
-        <div className="absolute bottom-[20%] left-[15%] w-64 h-64 opacity-30 animate-float">
+
+        {/* Row 2 */}
+        <div className="absolute top-[25%] left-[20%] w-56 h-56 opacity-35 animate-float">
+          <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-transparent blur-xl" />
           <Image
             src="/images/Eros Versace 200ml (1).png"
             alt="Luxury Perfume Bottle"
@@ -114,14 +116,77 @@ export default function Page() {
             className="object-contain"
           />
         </div>
-        
-        {/* Bottom Right */}
-        <div className="absolute bottom-[15%] right-[5%] w-64 h-64 opacity-25 animate-float-slow">
+
+        <div className="absolute top-[30%] right-[25%] w-64 h-64 opacity-25 animate-float-slow">
+          <div className="absolute inset-0 bg-gradient-to-bl from-rose-500/10 via-transparent to-transparent blur-xl" />
           <Image
             src="/images/Versace Dylan Blue EDP 100ml (1).png"
             alt="Luxury Perfume Bottle"
             fill
             className="object-contain"
+          />
+        </div>
+
+        {/* Row 3 */}
+        <div className="absolute top-[45%] left-[8%] w-72 h-72 opacity-30 animate-float-slower">
+          <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/10 via-transparent to-transparent blur-xl" />
+          <Image
+            src="/images/Luxury Perfume Bottles (2).png"
+            alt="Luxury Perfume Bottle"
+            fill
+            className="object-contain transform -rotate-12"
+          />
+        </div>
+
+        <div className="absolute top-[50%] right-[10%] w-64 h-64 opacity-35 animate-float">
+          <div className="absolute inset-0 bg-gradient-to-bl from-purple-500/10 via-transparent to-transparent blur-xl" />
+          <Image
+            src="/images/Luxury Perfume Bottles (1).png"
+            alt="Luxury Perfume Bottle"
+            fill
+            className="object-contain transform rotate-12"
+          />
+        </div>
+
+        {/* Row 4 */}
+        <div className="absolute bottom-[30%] left-[15%] w-64 h-64 opacity-30 animate-float-slow">
+          <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 via-transparent to-transparent blur-xl" />
+          <Image
+            src="/images/Eros Versace 200ml (1).png"
+            alt="Luxury Perfume Bottle"
+            fill
+            className="object-contain transform -rotate-6"
+          />
+        </div>
+
+        <div className="absolute bottom-[35%] right-[20%] w-56 h-56 opacity-25 animate-float-slower">
+          <div className="absolute inset-0 bg-gradient-to-bl from-amber-500/10 via-transparent to-transparent blur-xl" />
+          <Image
+            src="/images/Versace Dylan Blue EDP 100ml (1).png"
+            alt="Luxury Perfume Bottle"
+            fill
+            className="object-contain transform rotate-6"
+          />
+        </div>
+
+        {/* Row 5 */}
+        <div className="absolute bottom-[15%] left-[25%] w-72 h-72 opacity-35 animate-float">
+          <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-transparent blur-xl" />
+          <Image
+            src="/images/Luxury Perfume Bottles (2).png"
+            alt="Luxury Perfume Bottle"
+            fill
+            className="object-contain transform -rotate-12"
+          />
+        </div>
+
+        <div className="absolute bottom-[10%] right-[15%] w-64 h-64 opacity-30 animate-float-slow">
+          <div className="absolute inset-0 bg-gradient-to-bl from-rose-500/10 via-transparent to-transparent blur-xl" />
+          <Image
+            src="/images/Luxury Perfume Bottles (1).png"
+            alt="Luxury Perfume Bottle"
+            fill
+            className="object-contain transform rotate-12"
           />
         </div>
       </div>
@@ -132,25 +197,28 @@ export default function Page() {
           {/* Logo Mark */}
           <div className="mb-12 space-y-6">
             {/* iOS App Icon Style */}
-            <div className="w-32 h-32 mx-auto rounded-[32px] bg-white/5 p-[2px] shadow-2xl relative animate-scale-in">
+            <div className="w-32 h-32 mx-auto rounded-[32px] bg-gradient-to-br from-rose-500/20 via-amber-500/10 to-purple-500/20 p-[2px] shadow-2xl relative animate-scale-in">
               {/* Icon Container */}
               <div className="w-full h-full rounded-[30px] bg-black flex items-center justify-center relative overflow-hidden">
                 {/* Animated Neural Network Background */}
                 <div className="absolute inset-0">
-                  <div className="absolute inset-0 bg-dotted-grid opacity-10" />
+                  <div className="absolute inset-0 bg-dotted-grid opacity-20" />
                 </div>
+
+                {/* Glossy Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent" />
 
                 {/* Central Icon */}
                 <div className="relative z-10 flex flex-col items-center">
                   {/* Top Ring */}
-                  <div className="w-16 h-16 rounded-full border-2 border-white/10 bg-black p-[1px] animate-pulse">
+                  <div className="w-16 h-16 rounded-full border-2 border-white/20 bg-gradient-to-br from-rose-500/20 via-amber-500/10 to-purple-500/20 p-[1px] animate-pulse">
                     <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
-                      <Sparkles className="w-8 h-8 text-white/80" />
+                      <Sparkles className="w-8 h-8 text-white/90" />
                     </div>
                   </div>
                   
                   {/* AI Text */}
-                  <div className="mt-1 text-base font-bold text-white/90 tracking-wider">
+                  <div className="mt-1 text-base font-bold text-white tracking-wider bg-gradient-to-r from-rose-500/90 via-amber-500/90 to-purple-500/90 bg-clip-text text-transparent">
                     SCENT SAVVY
                   </div>
                 </div>
@@ -159,11 +227,11 @@ export default function Page() {
 
             {/* iOS App Style Label */}
             <div className="text-center space-y-2">
-              <h2 className="text-white/90 font-medium text-xl tracking-wide">Scent Savvy</h2>
+              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500/90 via-amber-500/90 to-purple-500/90 font-medium text-xl tracking-wide">Scent Savvy</h2>
               <div className="flex items-center justify-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
-                <p className="text-white/60 text-sm tracking-[0.2em] uppercase">Available Soon</p>
-                <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
+                <div className="w-1.5 h-1.5 rounded-full bg-rose-500/40" />
+                <p className="text-white/80 text-sm tracking-[0.2em] uppercase">Available Soon</p>
+                <div className="w-1.5 h-1.5 rounded-full bg-purple-500/40" />
               </div>
             </div>
           </div>
