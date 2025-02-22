@@ -42,7 +42,7 @@ export default function Page() {
       {/* Floating Perfume Bottles */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Top Bottles */}
-        <div className="absolute top-[2%] right-[30%] w-[500px] h-[500px] rotate-[15deg] opacity-[0.9] animate-float-slow">
+        <div className="absolute top-[2%] right-[30%] w-[500px] h-[500px] rotate-[15deg] opacity-[0.7] animate-float-slow">
           <Image
             src="/images/Versace Dylan Blue EDP 100ml (1).png"
             alt="Versace Dylan Blue"
@@ -53,7 +53,7 @@ export default function Page() {
           />
         </div>
         
-        <div className="absolute top-[2%] left-[30%] w-[550px] h-[550px] -rotate-[15deg] opacity-[0.9] animate-float-slower">
+        <div className="absolute top-[2%] left-[30%] w-[550px] h-[550px] -rotate-[15deg] opacity-[0.7] animate-float-slower">
           <Image
             src="/images/Eros Versace 200ml (1).png"
             alt="Eros Versace"
@@ -65,7 +65,7 @@ export default function Page() {
         </div>
 
         {/* Side Bottles */}
-        <div className="absolute top-[35%] right-[2%] w-[600px] h-[600px] rotate-[12deg] opacity-[0.9] animate-float">
+        <div className="absolute top-[35%] right-[2%] w-[600px] h-[600px] rotate-[12deg] opacity-[0.7] animate-float">
           <Image
             src="/images/Dylan Blue Pour Homme EDT 50ml (1).png"
             alt="Dylan Blue Pour Homme"
@@ -76,7 +76,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="absolute top-[35%] left-[2%] w-[580px] h-[580px] -rotate-[12deg] opacity-[0.9] animate-float-slow">
+        <div className="absolute top-[35%] left-[2%] w-[580px] h-[580px] -rotate-[12deg] opacity-[0.7] animate-float-slow">
           <Image
             src="/images/Luxury Perfume Bottles.png"
             alt="Luxury Perfume"
@@ -88,7 +88,7 @@ export default function Page() {
         </div>
 
         {/* Bottom Bottles */}
-        <div className="absolute bottom-[2%] right-[30%] w-[550px] h-[550px] rotate-[-15deg] opacity-[0.9] animate-float-slower">
+        <div className="absolute bottom-[2%] right-[30%] w-[550px] h-[550px] rotate-[-15deg] opacity-[0.7] animate-float-slower">
           <Image
             src="/images/Luxury Perfume Bottles (2).png"
             alt="Luxury Perfume 2"
@@ -99,7 +99,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="absolute bottom-[2%] left-[30%] w-[520px] h-[520px] rotate-[15deg] opacity-[0.9] animate-float">
+        <div className="absolute bottom-[2%] left-[30%] w-[520px] h-[520px] rotate-[15deg] opacity-[0.7] animate-float">
           <Image
             src="/images/Luxury Perfume Bottles (1).png"
             alt="Luxury Perfume 1"
@@ -122,9 +122,9 @@ export default function Page() {
           {/* Logo Mark */}
           <div className="mb-12 space-y-6">
             {/* iOS App Icon Style */}
-            <div className="w-32 h-32 mx-auto rounded-[32px] bg-gradient-to-br from-amber-500 via-rose-500 to-purple-600 p-[2px] shadow-2xl relative">
+            <div className="w-32 h-32 mx-auto rounded-[32px] bg-gradient-to-br from-amber-500 via-rose-500 to-purple-600 p-[2px] shadow-2xl relative animate-scale-in">
               {/* Outer Glow */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-purple-600/20 rounded-full blur-xl" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-purple-600/20 rounded-full blur-xl animate-glow" />
               
               {/* Icon Container */}
               <div className="w-full h-full rounded-[30px] bg-gradient-to-br from-black via-black to-black/90 flex items-center justify-center relative overflow-hidden backdrop-blur-xl">
@@ -165,7 +165,7 @@ export default function Page() {
           </div>
 
           {/* Header */}
-          <div className="space-y-8 relative">
+          <div className="space-y-8 relative animate-fade-in">
             <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-3xl -m-8 p-8" />
             <h1 className={`${playfair.className} relative text-6xl md:text-7xl lg:text-8xl font-semibold leading-[1.1] tracking-tight text-white`}>
               Your Signature
@@ -181,7 +181,7 @@ export default function Page() {
 
           {/* Features */}
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="group">
+            <div className="group hover-lift">
               <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
@@ -191,7 +191,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="group">
+            <div className="group hover-lift">
               <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
                 <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
@@ -201,7 +201,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="group">
+            <div className="group hover-lift">
               <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
@@ -211,7 +211,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="group">
+            <div className="group hover-lift">
               <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
                 <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
@@ -226,26 +226,26 @@ export default function Page() {
           {/* Email Form */}
           <div className="max-w-md mx-auto space-y-6">
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="relative">
+              <div className="relative hover-lift">
                 <input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-4 text-lg rounded-lg bg-black/50 border border-white/10 backdrop-blur-xl focus:outline-none focus:border-white/20 transition-colors text-white placeholder-gray-400"
+                  className="w-full px-6 py-4 text-lg rounded-lg bg-black/50 border border-white/10 backdrop-blur-xl focus:outline-none focus:border-white/20 transition-all duration-300 text-white placeholder-gray-400 hover:border-white/20"
                 />
-                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-amber-500/20 rounded-lg blur-xl opacity-50" />
+                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-amber-500/20 rounded-lg blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
               </div>
               <button 
                 type="submit"
                 disabled={status === 'loading' || status === 'success'}
-                className="w-full bg-gradient-to-r from-amber-300 to-rose-300 text-black py-4 text-lg rounded-lg font-medium hover:opacity-90 transition-opacity"
+                className="w-full bg-gradient-to-r from-amber-300 to-rose-300 text-black py-4 text-lg rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:scale-[1.02] hover-lift"
               >
                 {status === 'loading' ? 'Joining...' : status === 'success' ? 'Joined' : 'Get Early Access'}
               </button>
             </form>
 
-            <div className="bg-black/50 backdrop-blur-xl py-3 px-4 rounded-lg text-sm text-white/80 border border-white/10">
+            <div className="bg-black/50 backdrop-blur-xl py-3 px-4 rounded-lg text-sm text-white/80 border border-white/10 hover:border-white/20 transition-all duration-300 hover-lift">
               Join Scent Savvy's exclusive community of luxury fragrance enthusiasts
             </div>
           </div>
