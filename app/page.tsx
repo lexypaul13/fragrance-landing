@@ -51,15 +51,25 @@ export default function Page() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': '*/*',
         },
+        mode: 'no-cors',
         body: JSON.stringify(data)
       })
 
       console.log('Response received:', {
         status: response.status,
         ok: response.ok,
-        statusText: response.statusText
+        statusText: response.statusText,
+        type: response.type
       })
+
+      if (response.type === 'opaque') {
+        console.log('Opaque response received - this is normal with no-cors mode')
+        setStatus('success')
+        setEmail('')
+        return
+      }
 
       try {
         const responseText = await response.text()
