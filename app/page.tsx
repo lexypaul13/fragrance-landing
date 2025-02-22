@@ -83,6 +83,49 @@ export default function Page() {
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20" />
       </div>
 
+      {/* Floating Bottles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Top Left */}
+        <div className="absolute top-[10%] left-[5%] w-48 h-48 opacity-20 animate-float-slow">
+          <Image
+            src="/perfume1.png"
+            alt="Perfume Bottle"
+            fill
+            className="object-contain"
+          />
+        </div>
+        
+        {/* Top Right */}
+        <div className="absolute top-[15%] right-[10%] w-64 h-64 opacity-15 animate-float-slower">
+          <Image
+            src="/perfume2.png"
+            alt="Perfume Bottle"
+            fill
+            className="object-contain"
+          />
+        </div>
+        
+        {/* Bottom Left */}
+        <div className="absolute bottom-[20%] left-[15%] w-56 h-56 opacity-20 animate-float">
+          <Image
+            src="/perfume3.png"
+            alt="Perfume Bottle"
+            fill
+            className="object-contain"
+          />
+        </div>
+        
+        {/* Bottom Right */}
+        <div className="absolute bottom-[15%] right-[5%] w-48 h-48 opacity-15 animate-float-slow">
+          <Image
+            src="/perfume4.png"
+            alt="Perfume Bottle"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
       {/* Main Content */}
       <div className="relative px-4 py-20 flex items-center justify-center min-h-screen">
         <div className="max-w-2xl mx-auto w-full text-center space-y-16">
