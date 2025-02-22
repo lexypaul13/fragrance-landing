@@ -23,12 +23,60 @@ export default function Page() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(email)) {
+      setStatus('error')
+      return
+    }
+
     setStatus('loading')
     
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      console.log('Form submission started')
+      
+      // Get this URL from your Zapier webhook setup
+      const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/21805721/2g2e6f2/'
+      
+      const data = {
+        email,
+        timestamp: new Date().toISOString(),
+        source: 'landing_page'
+      }
+      
+      console.log('Data to be sent:', data)
+      
+      const response = await fetch(ZAPIER_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      })
+
+      console.log('Response received:', {
+        status: response.status,
+        ok: response.ok,
+        statusText: response.statusText
+      })
+
+      try {
+        const responseText = await response.text()
+        console.log('Response body:', responseText)
+      } catch (err) {
+        console.log('Error reading response:', err)
+      }
+
+      if (!response.ok) {
+        throw new Error(`Request failed: ${response.status} ${response.statusText}`)
+      }
+
+      console.log('Form submission successful')
       setStatus('success')
+      setEmail('') // Clear the form
     } catch (error) {
+      console.error('Form submission error:', error)
       setStatus('error')
     }
   }
@@ -233,15 +281,29 @@ export default function Page() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-6 py-4 text-lg rounded-lg bg-black/50 border border-white/10 backdrop-blur-xl focus:outline-none focus:border-white/20 transition-all duration-300 text-white placeholder-gray-400 hover:border-white/20"
+                  disabled={status === 'success'}
                 />
                 <div className="absolute inset-0 -z-10 bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-amber-500/20 rounded-lg blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
               </div>
+              
+              {/* Status Messages */}
+              {status === 'error' && (
+                <div className="text-rose-500 text-sm animate-fade-in">
+                  Please check your email and try again
+                </div>
+              )}
+              {status === 'success' && (
+                <div className="text-emerald-500 text-sm animate-fade-in">
+                  Welcome to Scent Savvy! Check your inbox for exclusive updates.
+                </div>
+              )}
+              
               <button 
                 type="submit"
-                disabled={status === 'loading' || status === 'success'}
-                className="w-full bg-gradient-to-r from-amber-300 to-rose-300 text-black py-4 text-lg rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:scale-[1.02] hover-lift"
+                disabled={status === 'loading' || status === 'success' || !email}
+                className="w-full bg-gradient-to-r from-amber-300 to-rose-300 text-black py-4 text-lg rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:scale-[1.02] hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === 'loading' ? 'Joining...' : status === 'success' ? 'Joined' : 'Get Early Access'}
+                {status === 'loading' ? 'Joining...' : status === 'success' ? 'Joined!' : 'Get Early Access'}
               </button>
             </form>
 
