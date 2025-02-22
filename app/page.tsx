@@ -86,8 +86,8 @@ export default function Page() {
       {/* Floating Bottles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Row 1 */}
-        <div className="absolute top-[5%] left-[5%] w-64 h-64 opacity-40 animate-bottle-float group">
-          <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/20 via-purple-500/10 to-transparent blur-2xl animate-glow" />
+        <div className="absolute top-[5%] left-[5%] w-64 h-64 opacity-70 animate-bottle-float group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/30 via-purple-500/20 to-transparent blur-2xl animate-glow" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer" />
           <div className="relative transform-gpu animate-bottle-rotate bottle-shadow">
             <Image
@@ -99,8 +99,8 @@ export default function Page() {
           </div>
         </div>
         
-        <div className="absolute top-[8%] right-[15%] w-72 h-72 opacity-30 animate-bottle-float [animation-delay:1s] group">
-          <div className="absolute inset-0 bg-gradient-to-bl from-amber-500/20 via-rose-500/10 to-transparent blur-2xl animate-glow [animation-delay:1s]" />
+        <div className="absolute top-[8%] right-[15%] w-72 h-72 opacity-60 animate-bottle-float [animation-delay:1s] group">
+          <div className="absolute inset-0 bg-gradient-to-bl from-amber-500/30 via-rose-500/20 to-transparent blur-2xl animate-glow [animation-delay:1s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:2s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:2s] bottle-shadow">
             <Image
@@ -113,8 +113,8 @@ export default function Page() {
         </div>
 
         {/* Row 2 */}
-        <div className="absolute top-[25%] left-[20%] w-56 h-56 opacity-35 animate-bottle-float [animation-delay:2s] group">
-          <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 via-amber-500/10 to-transparent blur-2xl animate-glow [animation-delay:3s]" />
+        <div className="absolute top-[25%] left-[20%] w-56 h-56 opacity-65 animate-bottle-float [animation-delay:2s] group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/30 via-amber-500/20 to-transparent blur-2xl animate-glow [animation-delay:3s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:4s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:4s] bottle-shadow">
             <Image
@@ -126,8 +126,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="absolute top-[30%] right-[25%] w-64 h-64 opacity-25 animate-bottle-float [animation-delay:3s] group">
-          <div className="absolute inset-0 bg-gradient-to-bl from-rose-500/20 via-purple-500/10 to-transparent blur-2xl animate-glow [animation-delay:5s]" />
+        <div className="absolute top-[30%] right-[25%] w-64 h-64 opacity-55 animate-bottle-float [animation-delay:3s] group">
+          <div className="absolute inset-0 bg-gradient-to-bl from-rose-500/30 via-purple-500/20 to-transparent blur-2xl animate-glow [animation-delay:5s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:6s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:6s] bottle-shadow">
             <Image
@@ -140,8 +140,8 @@ export default function Page() {
         </div>
 
         {/* Row 3 */}
-        <div className="absolute top-[45%] left-[8%] w-72 h-72 opacity-30 animate-bottle-float [animation-delay:4s] group">
-          <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 via-rose-500/10 to-transparent blur-2xl animate-glow [animation-delay:7s]" />
+        <div className="absolute top-[45%] left-[8%] w-72 h-72 opacity-60 animate-bottle-float [animation-delay:4s] group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/30 via-rose-500/20 to-transparent blur-2xl animate-glow [animation-delay:7s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:8s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:8s] bottle-shadow">
             <Image
@@ -153,8 +153,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="absolute top-[50%] right-[10%] w-64 h-64 opacity-35 animate-bottle-float [animation-delay:5s] group">
-          <div className="absolute inset-0 bg-gradient-to-bl from-purple-500/20 via-amber-500/10 to-transparent blur-2xl animate-glow [animation-delay:9s]" />
+        <div className="absolute top-[50%] right-[10%] w-64 h-64 opacity-65 animate-bottle-float [animation-delay:5s] group">
+          <div className="absolute inset-0 bg-gradient-to-bl from-purple-500/30 via-amber-500/20 to-transparent blur-2xl animate-glow [animation-delay:9s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:10s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:10s] bottle-shadow">
             <Image
@@ -167,8 +167,8 @@ export default function Page() {
         </div>
 
         {/* Row 4 */}
-        <div className="absolute bottom-[30%] left-[15%] w-64 h-64 opacity-30 animate-bottle-float [animation-delay:6s] group">
-          <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/20 via-purple-500/10 to-transparent blur-2xl animate-glow [animation-delay:11s]" />
+        <div className="absolute bottom-[30%] left-[15%] w-64 h-64 opacity-60 animate-bottle-float [animation-delay:6s] group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/30 via-purple-500/20 to-transparent blur-2xl animate-glow [animation-delay:11s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:12s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:12s] bottle-shadow">
             <Image
@@ -180,8 +180,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="absolute bottom-[35%] right-[20%] w-56 h-56 opacity-25 animate-bottle-float [animation-delay:7s] group">
-          <div className="absolute inset-0 bg-gradient-to-bl from-amber-500/20 via-rose-500/10 to-transparent blur-2xl animate-glow [animation-delay:13s]" />
+        <div className="absolute bottom-[35%] right-[20%] w-56 h-56 opacity-55 animate-bottle-float [animation-delay:7s] group">
+          <div className="absolute inset-0 bg-gradient-to-bl from-amber-500/30 via-rose-500/20 to-transparent blur-2xl animate-glow [animation-delay:13s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:14s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:14s] bottle-shadow">
             <Image
@@ -194,8 +194,8 @@ export default function Page() {
         </div>
 
         {/* Row 5 */}
-        <div className="absolute bottom-[15%] left-[25%] w-72 h-72 opacity-35 animate-bottle-float [animation-delay:8s] group">
-          <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 via-amber-500/10 to-transparent blur-2xl animate-glow [animation-delay:15s]" />
+        <div className="absolute bottom-[15%] left-[25%] w-72 h-72 opacity-65 animate-bottle-float [animation-delay:8s] group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/30 via-amber-500/20 to-transparent blur-2xl animate-glow [animation-delay:15s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:16s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:16s] bottle-shadow">
             <Image
@@ -207,8 +207,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="absolute bottom-[10%] right-[15%] w-64 h-64 opacity-30 animate-bottle-float [animation-delay:9s] group">
-          <div className="absolute inset-0 bg-gradient-to-bl from-rose-500/20 via-purple-500/10 to-transparent blur-2xl animate-glow [animation-delay:17s]" />
+        <div className="absolute bottom-[10%] right-[15%] w-64 h-64 opacity-60 animate-bottle-float [animation-delay:9s] group">
+          <div className="absolute inset-0 bg-gradient-to-bl from-rose-500/30 via-purple-500/20 to-transparent blur-2xl animate-glow [animation-delay:17s]" />
           <div className="absolute inset-0 bottle-highlight animate-shimmer [animation-delay:18s]" />
           <div className="relative transform-gpu animate-bottle-rotate [animation-delay:18s] bottle-shadow">
             <Image
