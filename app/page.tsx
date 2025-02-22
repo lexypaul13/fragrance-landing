@@ -79,8 +79,8 @@ export default function Page() {
       <div className="absolute inset-0 bg-black" />
       
       {/* Grain Texture */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-overlay">
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-30" />
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20" />
       </div>
 
       {/* Main Content */}
@@ -127,7 +127,7 @@ export default function Page() {
 
           {/* Header */}
           <div className="space-y-8 relative animate-fade-in">
-            <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-3xl -m-8 p-8" />
+            <div className="absolute inset-0 bg-black rounded-3xl -m-8 p-8" />
             <h1 className={`${playfair.className} relative text-6xl md:text-7xl lg:text-8xl font-semibold leading-[1.1] tracking-tight text-white`}>
               Discover Your
               <br />
