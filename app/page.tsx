@@ -76,8 +76,8 @@ export default function Page() {
   return (
     <main className={`${inter.className} min-h-screen relative overflow-hidden bg-black`}>
       {/* Ambient Background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-amber-900/10 via-black to-black" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-rose-900/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
       
       {/* Floating Perfume Bottles */}
       <div className="absolute inset-0 overflow-hidden">
@@ -152,8 +152,8 @@ export default function Page() {
       </div>
 
       {/* Grain Texture */}
-      <div className="absolute inset-0 opacity-50 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20" />
+      <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-overlay">
+        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-50" />
       </div>
 
       {/* Main Content */}
@@ -162,9 +162,9 @@ export default function Page() {
           {/* Logo Mark */}
           <div className="mb-12 space-y-6">
             {/* iOS App Icon Style */}
-            <div className="w-32 h-32 mx-auto rounded-[32px] bg-gradient-to-br from-amber-500 via-rose-500 to-purple-600 p-[2px] shadow-2xl relative animate-scale-in">
+            <div className="w-32 h-32 mx-auto rounded-[32px] bg-gradient-to-br from-purple-500 via-amber-500 to-rose-500 p-[2px] shadow-2xl relative animate-scale-in">
               {/* Outer Glow */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-purple-600/20 rounded-full blur-xl animate-glow" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/20 via-amber-500/20 to-rose-500/20 rounded-full blur-xl animate-glow" />
               
               {/* Icon Container */}
               <div className="w-full h-full rounded-[30px] bg-gradient-to-br from-black via-black to-black/90 flex items-center justify-center relative overflow-hidden backdrop-blur-xl">
@@ -172,21 +172,21 @@ export default function Page() {
                 <div className="absolute inset-0">
                   <div className="absolute inset-0 bg-dotted-grid opacity-20" />
                   <div className="absolute top-0 left-0 w-full h-full">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-purple-600/20 rounded-full blur-2xl animate-spin-slow" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 bg-gradient-to-r from-purple-500/20 via-amber-500/20 to-rose-500/20 rounded-full blur-2xl animate-spin-slow" />
                   </div>
                 </div>
 
                 {/* Central Icon */}
                 <div className="relative z-10 flex flex-col items-center">
                   {/* Top Ring */}
-                  <div className="w-16 h-16 rounded-full border-2 border-transparent bg-gradient-to-r from-amber-500 via-rose-500 to-purple-600 p-[1px] animate-pulse">
+                  <div className="w-16 h-16 rounded-full border-2 border-transparent bg-gradient-to-r from-purple-500 via-amber-500 to-rose-500 p-[1px] animate-pulse">
                     <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
                       <Sparkles className="w-8 h-8 text-white" />
                     </div>
                   </div>
                   
                   {/* AI Text */}
-                  <div className="mt-1 text-base font-bold bg-gradient-to-r from-amber-400 via-rose-400 to-purple-400 text-transparent bg-clip-text tracking-wider">
+                  <div className="mt-1 text-base font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-rose-400 text-transparent bg-clip-text tracking-wider">
                     SCENT SAVVY
                   </div>
                 </div>
@@ -197,9 +197,9 @@ export default function Page() {
             <div className="text-center space-y-2">
               <h2 className="text-white/90 font-medium text-xl tracking-wide">Scent Savvy</h2>
               <div className="flex items-center justify-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-amber-400 to-rose-400" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-400 to-rose-400" />
                 <p className="text-white/60 text-sm tracking-[0.2em] uppercase">Available Soon</p>
-                <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-rose-400 to-purple-400" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-rose-400 to-rose-500" />
               </div>
             </div>
           </div>
@@ -208,22 +208,24 @@ export default function Page() {
           <div className="space-y-8 relative animate-fade-in">
             <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-3xl -m-8 p-8" />
             <h1 className={`${playfair.className} relative text-6xl md:text-7xl lg:text-8xl font-semibold leading-[1.1] tracking-tight text-white`}>
-              Your Signature
+              Discover Your
               <br />
-              <span className="bg-gradient-to-r from-amber-300 via-rose-200 to-amber-300 text-transparent bg-clip-text">
-                Scent
+              <span className="bg-gradient-to-r from-purple-300 via-amber-200 to-purple-300 text-transparent bg-clip-text">
+                Signature Scent
               </span>
+              <br />
+              <span className="text-4xl md:text-5xl lg:text-6xl opacity-90">Without the Luxury Price Tag</span>
             </h1>
             <p className="relative text-xl md:text-2xl text-white font-light max-w-xl mx-auto leading-relaxed">
-              Discover designer fragrances at a fraction of the price, perfectly matched to your style
+              AI-powered matching to find designer fragrance alternatives that suit your style and budget
             </p>
           </div>
 
           {/* Features */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="group hover-lift">
-              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-amber-500/20">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
                   <div className="text-lg text-white font-light">
                     Save up to 70% on luxury fragrances
@@ -232,8 +234,8 @@ export default function Page() {
               </div>
             </div>
             <div className="group hover-lift">
-              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-amber-500/20">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
                   <div className="text-lg text-white font-light">
                     AI-powered scent analysis &amp; matching
@@ -242,8 +244,8 @@ export default function Page() {
               </div>
             </div>
             <div className="group hover-lift">
-              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-amber-500/20">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
                   <div className="text-lg text-white font-light">
                     Verified quality alternatives only
@@ -252,8 +254,8 @@ export default function Page() {
               </div>
             </div>
             <div className="group hover-lift">
-              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-amber-500/20">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
                   <div className="text-lg text-white font-light">
                     Personalized fragrance recommendations
@@ -275,7 +277,7 @@ export default function Page() {
                   className="w-full px-6 py-4 text-lg rounded-lg bg-black/50 border border-white/10 backdrop-blur-xl focus:outline-none focus:border-white/20 transition-all duration-300 text-white placeholder-gray-400 hover:border-white/20"
                   disabled={status === 'success'}
                 />
-                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-amber-500/20 rounded-lg blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
+                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/20 via-amber-500/20 to-rose-500/20 rounded-lg blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
               </div>
               
               {/* Status Messages */}
@@ -293,9 +295,12 @@ export default function Page() {
               <button 
                 type="submit"
                 disabled={status === 'loading' || status === 'success' || !email}
-                className="w-full bg-gradient-to-r from-amber-300 to-rose-300 text-black py-4 text-lg rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:scale-[1.02] hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-purple-300 to-rose-300 text-black py-4 text-lg rounded-lg font-medium 
+                  hover:opacity-100 hover:shadow-lg hover:shadow-amber-500/20 
+                  transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-0.5
+                  disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:hover:shadow-none"
               >
-                {status === 'loading' ? 'Joining...' : status === 'success' ? 'Joined!' : 'Get Early Access'}
+                {status === 'loading' ? 'Joining...' : status === 'success' ? 'Successfully Joined!' : 'Join Now for Exclusive Early Access'}
               </button>
             </form>
 
