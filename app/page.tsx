@@ -268,18 +268,22 @@ export default function Page() {
 
           {/* Header */}
           <div className="space-y-8 relative animate-fade-in">
-            <div className="absolute inset-0 bg-black rounded-3xl -m-8 p-8" />
-            <h1 className={`${playfair.className} relative text-6xl md:text-7xl lg:text-8xl font-semibold leading-[1.1] tracking-tight text-white`}>
-              Discover Your
-              <br />
-              <span className="text-white">
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black/90 rounded-3xl -m-8 p-8" />
+            <h1 className={`${playfair.className} relative text-6xl md:text-7xl lg:text-8xl font-semibold leading-[1.1] tracking-tight`}>
+              <span className="inline-block bg-gradient-to-r from-white via-white to-white/90 bg-clip-text text-transparent">
+                Discover Your
+                <br />
                 Signature Scent
               </span>
               <br />
-              <span className="text-4xl md:text-5xl lg:text-6xl text-white/80">Without the Luxury Price Tag</span>
+              <span className="text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-rose-300/90 via-amber-300/90 to-purple-300/90 bg-clip-text text-transparent font-light">
+                Without the Luxury Price Tag
+              </span>
             </h1>
-            <p className="relative text-xl md:text-2xl text-white/80 font-light max-w-xl mx-auto leading-relaxed">
-              AI-powered matching to find designer fragrance alternatives that suit your style and budget
+            <p className="relative text-xl md:text-2xl font-light max-w-xl mx-auto leading-relaxed">
+              <span className="bg-gradient-to-r from-white/80 via-white/90 to-white/80 bg-clip-text text-transparent">
+                AI-powered matching to find designer fragrance alternatives that suit your style and budget
+              </span>
             </p>
           </div>
 
@@ -287,9 +291,9 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="group hover-lift">
               <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
-                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="text-lg text-white/80 font-light">
+                  <div className="text-lg bg-gradient-to-r from-white/90 via-white to-white/90 bg-clip-text text-transparent font-light">
                     Save up to 70% on luxury fragrances
                   </div>
                 </div>
@@ -297,9 +301,9 @@ export default function Page() {
             </div>
             <div className="group hover-lift">
               <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
-                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="text-lg text-white/80 font-light">
+                  <div className="text-lg bg-gradient-to-r from-white/90 via-white to-white/90 bg-clip-text text-transparent font-light">
                     AI-powered scent analysis &amp; matching
                   </div>
                 </div>
@@ -307,9 +311,9 @@ export default function Page() {
             </div>
             <div className="group hover-lift">
               <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
-                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="text-lg text-white/80 font-light">
+                  <div className="text-lg bg-gradient-to-r from-white/90 via-white to-white/90 bg-clip-text text-transparent font-light">
                     Verified quality alternatives only
                   </div>
                 </div>
@@ -317,9 +321,9 @@ export default function Page() {
             </div>
             <div className="group hover-lift">
               <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
-                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="text-lg text-white/80 font-light">
+                  <div className="text-lg bg-gradient-to-r from-white/90 via-white to-white/90 bg-clip-text text-transparent font-light">
                     Personalized fragrance recommendations
                   </div>
                 </div>
