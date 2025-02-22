@@ -86,40 +86,40 @@ export default function Page() {
       {/* Floating Bottles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Top Left */}
-        <div className="absolute top-[10%] left-[5%] w-48 h-48 opacity-20 animate-float-slow">
+        <div className="absolute top-[10%] left-[5%] w-64 h-64 opacity-30 animate-float-slow">
           <Image
-            src="/images/features/matching.jpg"
-            alt="Perfume Bottle"
+            src="/images/Luxury Perfume Bottles (1).png"
+            alt="Luxury Perfume Bottle"
             fill
             className="object-contain"
           />
         </div>
         
         {/* Top Right */}
-        <div className="absolute top-[15%] right-[10%] w-64 h-64 opacity-15 animate-float-slower">
+        <div className="absolute top-[15%] right-[10%] w-72 h-72 opacity-25 animate-float-slower">
           <Image
-            src="/images/features/quality.jpg"
-            alt="Perfume Bottle"
+            src="/images/Luxury Perfume Bottles (2).png"
+            alt="Luxury Perfume Bottle"
             fill
             className="object-contain"
           />
         </div>
         
         {/* Bottom Left */}
-        <div className="absolute bottom-[20%] left-[15%] w-56 h-56 opacity-20 animate-float">
+        <div className="absolute bottom-[20%] left-[15%] w-64 h-64 opacity-30 animate-float">
           <Image
-            src="/images/features/personalized.jpg"
-            alt="Perfume Bottle"
+            src="/images/Eros Versace 200ml (1).png"
+            alt="Luxury Perfume Bottle"
             fill
             className="object-contain"
           />
         </div>
         
         {/* Bottom Right */}
-        <div className="absolute bottom-[15%] right-[5%] w-48 h-48 opacity-15 animate-float-slow">
+        <div className="absolute bottom-[15%] right-[5%] w-64 h-64 opacity-25 animate-float-slow">
           <Image
-            src="/images/features/sustainable.jpg"
-            alt="Perfume Bottle"
+            src="/images/Versace Dylan Blue EDP 100ml (1).png"
+            alt="Luxury Perfume Bottle"
             fill
             className="object-contain"
           />
