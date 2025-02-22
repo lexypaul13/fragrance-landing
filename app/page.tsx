@@ -94,6 +94,8 @@ export default function Page() {
               src="/images/Luxury Perfume Bottles (1).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -107,6 +109,8 @@ export default function Page() {
               src="/images/Luxury Perfume Bottles (2).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -121,6 +125,8 @@ export default function Page() {
               src="/images/Eros Versace 200ml (1).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -134,6 +140,8 @@ export default function Page() {
               src="/images/Versace Dylan Blue EDP 100ml (1).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -148,6 +156,8 @@ export default function Page() {
               src="/images/Luxury Perfume Bottles (2).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -161,6 +171,8 @@ export default function Page() {
               src="/images/Luxury Perfume Bottles (1).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -175,6 +187,8 @@ export default function Page() {
               src="/images/Eros Versace 200ml (1).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -188,6 +202,8 @@ export default function Page() {
               src="/images/Versace Dylan Blue EDP 100ml (1).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -202,6 +218,8 @@ export default function Page() {
               src="/images/Luxury Perfume Bottles (2).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -215,6 +233,8 @@ export default function Page() {
               src="/images/Luxury Perfume Bottles (1).png"
               alt="Luxury Perfume Bottle"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
