@@ -42,7 +42,13 @@ export default function Page() {
       const data = {
         email,
         timestamp: new Date().toISOString(),
-        source: 'landing_page'
+        source: 'landing_page',
+        metadata: {
+          platform: navigator.platform,
+          userAgent: navigator.userAgent,
+          referrer: document.referrer || 'direct',
+          url: window.location.href
+        }
       }
       
       console.log('Data to be sent:', data)
@@ -51,40 +57,25 @@ export default function Page() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': '*/*',
         },
-        mode: 'no-cors',
         body: JSON.stringify(data)
       })
 
       console.log('Response received:', {
         status: response.status,
         ok: response.ok,
-        statusText: response.statusText,
-        type: response.type
+        statusText: response.statusText
       })
 
-      if (response.type === 'opaque') {
-        console.log('Opaque response received - this is normal with no-cors mode')
-        setStatus('success')
-        setEmail('')
-        return
-      }
-
-      try {
-        const responseText = await response.text()
-        console.log('Response body:', responseText)
-      } catch (err) {
-        console.log('Error reading response:', err)
-      }
+      const responseData = await response.text()
+      console.log('Response data:', responseData)
 
       if (!response.ok) {
         throw new Error(`Request failed: ${response.status} ${response.statusText}`)
       }
 
-      console.log('Form submission successful')
       setStatus('success')
-      setEmail('') // Clear the form
+      setEmail('')
     } catch (error) {
       console.error('Form submission error:', error)
       setStatus('error')
