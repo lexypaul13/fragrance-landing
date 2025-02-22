@@ -84,110 +84,130 @@ export default function Page() {
       </div>
 
       {/* Floating Bottles */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Row 1 */}
-        <div className="absolute top-[5%] left-[5%] w-64 h-64">
-          <Image
-            src="/images/Luxury Perfume Bottles (1).png"
-            alt="Luxury Perfume Bottle"
-            width={256}
-            height={256}
-            className="object-contain"
-          />
+        <div className="absolute top-[5%] left-[5%] w-64 h-64 opacity-30 animate-float">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Luxury Perfume Bottles (1).png"
+              alt="Luxury Perfume Bottle"
+              width={256}
+              height={256}
+              className="object-contain"
+            />
+          </div>
         </div>
         
-        <div className="absolute top-[8%] right-[15%] w-72 h-72">
-          <Image
-            src="/images/Luxury Perfume Bottles (2).png"
-            alt="Luxury Perfume Bottle"
-            width={288}
-            height={288}
-            className="object-contain"
-          />
+        <div className="absolute top-[8%] right-[15%] w-72 h-72 opacity-25 animate-float-slow">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Luxury Perfume Bottles (2).png"
+              alt="Luxury Perfume Bottle"
+              width={288}
+              height={288}
+              className="object-contain"
+            />
+          </div>
         </div>
 
         {/* Row 2 */}
-        <div className="absolute top-[25%] left-[20%] w-56 h-56">
-          <Image
-            src="/images/Eros Versace 200ml (1).png"
-            alt="Luxury Perfume Bottle"
-            width={224}
-            height={224}
-            className="object-contain"
-          />
+        <div className="absolute top-[25%] left-[20%] w-56 h-56 opacity-20 animate-float-slower">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Eros Versace 200ml (1).png"
+              alt="Luxury Perfume Bottle"
+              width={224}
+              height={224}
+              className="object-contain"
+            />
+          </div>
         </div>
 
-        <div className="absolute top-[30%] right-[25%] w-64 h-64">
-          <Image
-            src="/images/Versace Dylan Blue EDP 100ml (1).png"
-            alt="Luxury Perfume Bottle"
-            width={256}
-            height={256}
-            className="object-contain"
-          />
+        <div className="absolute top-[30%] right-[25%] w-64 h-64 opacity-25 animate-float">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Versace Dylan Blue EDP 100ml (1).png"
+              alt="Luxury Perfume Bottle"
+              width={256}
+              height={256}
+              className="object-contain"
+            />
+          </div>
         </div>
 
         {/* Row 3 */}
-        <div className="absolute top-[45%] left-[8%] w-72 h-72">
-          <Image
-            src="/images/Luxury Perfume Bottles (2).png"
-            alt="Luxury Perfume Bottle"
-            width={288}
-            height={288}
-            className="object-contain"
-          />
+        <div className="absolute top-[45%] left-[8%] w-72 h-72 opacity-20 animate-float-slow">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Luxury Perfume Bottles (2).png"
+              alt="Luxury Perfume Bottle"
+              width={288}
+              height={288}
+              className="object-contain"
+            />
+          </div>
         </div>
 
-        <div className="absolute top-[50%] right-[10%] w-64 h-64">
-          <Image
-            src="/images/Luxury Perfume Bottles (1).png"
-            alt="Luxury Perfume Bottle"
-            width={256}
-            height={256}
-            className="object-contain"
-          />
+        <div className="absolute top-[50%] right-[10%] w-64 h-64 opacity-30 animate-float-slower">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Luxury Perfume Bottles (1).png"
+              alt="Luxury Perfume Bottle"
+              width={256}
+              height={256}
+              className="object-contain"
+            />
+          </div>
         </div>
 
         {/* Row 4 */}
-        <div className="absolute bottom-[30%] left-[15%] w-64 h-64">
-          <Image
-            src="/images/Eros Versace 200ml (1).png"
-            alt="Luxury Perfume Bottle"
-            width={256}
-            height={256}
-            className="object-contain"
-          />
+        <div className="absolute bottom-[30%] left-[15%] w-64 h-64 opacity-25 animate-float">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Eros Versace 200ml (1).png"
+              alt="Luxury Perfume Bottle"
+              width={256}
+              height={256}
+              className="object-contain"
+            />
+          </div>
         </div>
 
-        <div className="absolute bottom-[35%] right-[20%] w-56 h-56">
-          <Image
-            src="/images/Versace Dylan Blue EDP 100ml (1).png"
-            alt="Luxury Perfume Bottle"
-            width={224}
-            height={224}
-            className="object-contain"
-          />
+        <div className="absolute bottom-[35%] right-[20%] w-56 h-56 opacity-20 animate-float-slow">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Versace Dylan Blue EDP 100ml (1).png"
+              alt="Luxury Perfume Bottle"
+              width={224}
+              height={224}
+              className="object-contain"
+            />
+          </div>
         </div>
 
         {/* Row 5 */}
-        <div className="absolute bottom-[15%] left-[25%] w-72 h-72">
-          <Image
-            src="/images/Luxury Perfume Bottles (2).png"
-            alt="Luxury Perfume Bottle"
-            width={288}
-            height={288}
-            className="object-contain"
-          />
+        <div className="absolute bottom-[15%] left-[25%] w-72 h-72 opacity-25 animate-float-slower">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Luxury Perfume Bottles (2).png"
+              alt="Luxury Perfume Bottle"
+              width={288}
+              height={288}
+              className="object-contain"
+            />
+          </div>
         </div>
 
-        <div className="absolute bottom-[10%] right-[15%] w-64 h-64">
-          <Image
-            src="/images/Luxury Perfume Bottles (1).png"
-            alt="Luxury Perfume Bottle"
-            width={256}
-            height={256}
-            className="object-contain"
-          />
+        <div className="absolute bottom-[10%] right-[15%] w-64 h-64 opacity-30 animate-float">
+          <div className="relative transform-gpu hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/images/Luxury Perfume Bottles (1).png"
+              alt="Luxury Perfume Bottle"
+              width={256}
+              height={256}
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
 
