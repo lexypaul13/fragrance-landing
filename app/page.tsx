@@ -246,7 +246,8 @@ export default function Page() {
             </form>
 
             <div className="bg-black/50 backdrop-blur-xl py-3 px-4 rounded-lg text-sm text-white/80 border border-white/10 hover:border-white/20 transition-all duration-300 hover-lift">
-              Join Scent Savvy&apos;s exclusive community of luxury fragrance enthusiasts
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
+              Join Scent Savvy's exclusive community of luxury fragrance enthusiasts
             </div>
           </div>
 
