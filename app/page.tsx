@@ -88,7 +88,7 @@ export default function Page() {
         {/* Top Left */}
         <div className="absolute top-[10%] left-[5%] w-48 h-48 opacity-20 animate-float-slow">
           <Image
-            src="/perfume1.png"
+            src="/images/features/matching.jpg"
             alt="Perfume Bottle"
             fill
             className="object-contain"
@@ -98,7 +98,7 @@ export default function Page() {
         {/* Top Right */}
         <div className="absolute top-[15%] right-[10%] w-64 h-64 opacity-15 animate-float-slower">
           <Image
-            src="/perfume2.png"
+            src="/images/features/quality.jpg"
             alt="Perfume Bottle"
             fill
             className="object-contain"
@@ -108,7 +108,7 @@ export default function Page() {
         {/* Bottom Left */}
         <div className="absolute bottom-[20%] left-[15%] w-56 h-56 opacity-20 animate-float">
           <Image
-            src="/perfume3.png"
+            src="/images/features/personalized.jpg"
             alt="Perfume Bottle"
             fill
             className="object-contain"
@@ -118,7 +118,7 @@ export default function Page() {
         {/* Bottom Right */}
         <div className="absolute bottom-[15%] right-[5%] w-48 h-48 opacity-15 animate-float-slow">
           <Image
-            src="/perfume4.png"
+            src="/images/features/sustainable.jpg"
             alt="Perfume Bottle"
             fill
             className="object-contain"
