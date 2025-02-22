@@ -76,84 +76,11 @@ export default function Page() {
   return (
     <main className={`${inter.className} min-h-screen relative overflow-hidden bg-black`}>
       {/* Ambient Background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-black" />
       
-      {/* Floating Perfume Bottles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Top Bottles */}
-        <div className="absolute top-[2%] right-[30%] w-[500px] h-[500px] rotate-[15deg] opacity-[0.7] animate-float-slow">
-          <Image
-            src="/images/Versace Dylan Blue EDP 100ml (1).png"
-            alt="Versace Dylan Blue"
-            width={500}
-            height={500}
-            className="w-full h-full object-contain"
-            priority
-          />
-        </div>
-        
-        <div className="absolute top-[2%] left-[30%] w-[550px] h-[550px] -rotate-[15deg] opacity-[0.7] animate-float-slower">
-          <Image
-            src="/images/Eros Versace 200ml (1).png"
-            alt="Eros Versace"
-            width={550}
-            height={550}
-            className="w-full h-full object-contain"
-            priority
-          />
-        </div>
-
-        {/* Side Bottles */}
-        <div className="absolute top-[35%] right-[2%] w-[600px] h-[600px] rotate-[12deg] opacity-[0.7] animate-float">
-          <Image
-            src="/images/Dylan Blue Pour Homme EDT 50ml (1).png"
-            alt="Dylan Blue Pour Homme"
-            width={600}
-            height={600}
-            className="w-full h-full object-contain"
-            priority
-          />
-        </div>
-
-        <div className="absolute top-[35%] left-[2%] w-[580px] h-[580px] -rotate-[12deg] opacity-[0.7] animate-float-slow">
-          <Image
-            src="/images/Luxury Perfume Bottles.png"
-            alt="Luxury Perfume"
-            width={580}
-            height={580}
-            className="w-full h-full object-contain"
-            priority
-          />
-        </div>
-
-        {/* Bottom Bottles */}
-        <div className="absolute bottom-[2%] right-[30%] w-[550px] h-[550px] rotate-[-15deg] opacity-[0.7] animate-float-slower">
-          <Image
-            src="/images/Luxury Perfume Bottles (2).png"
-            alt="Luxury Perfume 2"
-            width={550}
-            height={550}
-            className="w-full h-full object-contain"
-            priority
-          />
-        </div>
-
-        <div className="absolute bottom-[2%] left-[30%] w-[520px] h-[520px] rotate-[15deg] opacity-[0.7] animate-float">
-          <Image
-            src="/images/Luxury Perfume Bottles (1).png"
-            alt="Luxury Perfume 1"
-            width={520}
-            height={520}
-            className="w-full h-full object-contain"
-            priority
-          />
-        </div>
-      </div>
-
       {/* Grain Texture */}
       <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-overlay">
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-50" />
+        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-30" />
       </div>
 
       {/* Main Content */}
@@ -162,31 +89,25 @@ export default function Page() {
           {/* Logo Mark */}
           <div className="mb-12 space-y-6">
             {/* iOS App Icon Style */}
-            <div className="w-32 h-32 mx-auto rounded-[32px] bg-gradient-to-br from-purple-500 via-amber-500 to-rose-500 p-[2px] shadow-2xl relative animate-scale-in">
-              {/* Outer Glow */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/20 via-amber-500/20 to-rose-500/20 rounded-full blur-xl animate-glow" />
-              
+            <div className="w-32 h-32 mx-auto rounded-[32px] bg-white/5 p-[2px] shadow-2xl relative animate-scale-in">
               {/* Icon Container */}
-              <div className="w-full h-full rounded-[30px] bg-gradient-to-br from-black via-black to-black/90 flex items-center justify-center relative overflow-hidden backdrop-blur-xl">
+              <div className="w-full h-full rounded-[30px] bg-black flex items-center justify-center relative overflow-hidden">
                 {/* Animated Neural Network Background */}
                 <div className="absolute inset-0">
-                  <div className="absolute inset-0 bg-dotted-grid opacity-20" />
-                  <div className="absolute top-0 left-0 w-full h-full">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 bg-gradient-to-r from-purple-500/20 via-amber-500/20 to-rose-500/20 rounded-full blur-2xl animate-spin-slow" />
-                  </div>
+                  <div className="absolute inset-0 bg-dotted-grid opacity-10" />
                 </div>
 
                 {/* Central Icon */}
                 <div className="relative z-10 flex flex-col items-center">
                   {/* Top Ring */}
-                  <div className="w-16 h-16 rounded-full border-2 border-transparent bg-gradient-to-r from-purple-500 via-amber-500 to-rose-500 p-[1px] animate-pulse">
+                  <div className="w-16 h-16 rounded-full border-2 border-white/10 bg-black p-[1px] animate-pulse">
                     <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
-                      <Sparkles className="w-8 h-8 text-white" />
+                      <Sparkles className="w-8 h-8 text-white/80" />
                     </div>
                   </div>
                   
                   {/* AI Text */}
-                  <div className="mt-1 text-base font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-rose-400 text-transparent bg-clip-text tracking-wider">
+                  <div className="mt-1 text-base font-bold text-white/90 tracking-wider">
                     SCENT SAVVY
                   </div>
                 </div>
@@ -197,9 +118,9 @@ export default function Page() {
             <div className="text-center space-y-2">
               <h2 className="text-white/90 font-medium text-xl tracking-wide">Scent Savvy</h2>
               <div className="flex items-center justify-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-400 to-rose-400" />
+                <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
                 <p className="text-white/60 text-sm tracking-[0.2em] uppercase">Available Soon</p>
-                <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-rose-400 to-rose-500" />
+                <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
               </div>
             </div>
           </div>
@@ -210,13 +131,13 @@ export default function Page() {
             <h1 className={`${playfair.className} relative text-6xl md:text-7xl lg:text-8xl font-semibold leading-[1.1] tracking-tight text-white`}>
               Discover Your
               <br />
-              <span className="bg-gradient-to-r from-purple-300 via-amber-200 to-purple-300 text-transparent bg-clip-text">
+              <span className="text-white">
                 Signature Scent
               </span>
               <br />
-              <span className="text-4xl md:text-5xl lg:text-6xl opacity-90">Without the Luxury Price Tag</span>
+              <span className="text-4xl md:text-5xl lg:text-6xl text-white/80">Without the Luxury Price Tag</span>
             </h1>
-            <p className="relative text-xl md:text-2xl text-white font-light max-w-xl mx-auto leading-relaxed">
+            <p className="relative text-xl md:text-2xl text-white/80 font-light max-w-xl mx-auto leading-relaxed">
               AI-powered matching to find designer fragrance alternatives that suit your style and budget
             </p>
           </div>
@@ -224,40 +145,40 @@ export default function Page() {
           {/* Features */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="group hover-lift">
-              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-amber-500/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
+                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="text-lg text-white font-light">
+                  <div className="text-lg text-white/80 font-light">
                     Save up to 70% on luxury fragrances
                   </div>
                 </div>
               </div>
             </div>
             <div className="group hover-lift">
-              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-amber-500/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
+                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="text-lg text-white font-light">
+                  <div className="text-lg text-white/80 font-light">
                     AI-powered scent analysis &amp; matching
                   </div>
                 </div>
               </div>
             </div>
             <div className="group hover-lift">
-              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-amber-500/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
+                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="text-lg text-white font-light">
+                  <div className="text-lg text-white/80 font-light">
                     Verified quality alternatives only
                   </div>
                 </div>
               </div>
             </div>
             <div className="group hover-lift">
-              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-amber-500/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/50 backdrop-blur-xl p-8 transition-all duration-500 hover:border-white/20">
+                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="text-lg text-white font-light">
+                  <div className="text-lg text-white/80 font-light">
                     Personalized fragrance recommendations
                   </div>
                 </div>
@@ -277,7 +198,7 @@ export default function Page() {
                   className="w-full px-6 py-4 text-lg rounded-lg bg-black/50 border border-white/10 backdrop-blur-xl focus:outline-none focus:border-white/20 transition-all duration-300 text-white placeholder-gray-400 hover:border-white/20"
                   disabled={status === 'success'}
                 />
-                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/20 via-amber-500/20 to-rose-500/20 rounded-lg blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
+                <div className="absolute inset-0 -z-10 bg-white/5 rounded-lg opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
               </div>
               
               {/* Status Messages */}
@@ -295,8 +216,8 @@ export default function Page() {
               <button 
                 type="submit"
                 disabled={status === 'loading' || status === 'success' || !email}
-                className="w-full bg-gradient-to-r from-purple-300 to-rose-300 text-black py-4 text-lg rounded-lg font-medium 
-                  hover:opacity-100 hover:shadow-lg hover:shadow-amber-500/20 
+                className="w-full bg-white text-black py-4 text-lg rounded-lg font-medium 
+                  hover:opacity-90 hover:shadow-lg hover:shadow-white/20 
                   transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-0.5
                   disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:hover:shadow-none"
               >
