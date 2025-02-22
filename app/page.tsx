@@ -196,7 +196,7 @@ export default function Page() {
                 <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
                   <div className="text-lg text-white font-light">
-                    AI-powered scent analysis & matching
+                    AI-powered scent analysis &amp; matching
                   </div>
                 </div>
               </div>
